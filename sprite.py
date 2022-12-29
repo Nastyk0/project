@@ -59,7 +59,7 @@ apple.rect.x = randint(0, 900)
 apple.rect.y = randint(0, 500)
 
 exit = True
-clock = pygame.time.Clock()
+
 while exit:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -73,6 +73,5 @@ while exit:
     all_sprites_list2.draw(screen)
 
     pygame.display.flip()
-    clock.tick(60)
 
 pygame.quit()
